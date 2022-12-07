@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cipher</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <div id="container-fluid">
+        <header class="cypher-header">
+          <h1>Caesar Cipher Page </h1>
+          <nav id="navbar-desktop">
+            <ul class="navbar-ul">
+              <li><a href="#explanation" class="navlink">Explanation</a></li>
+              <li><a href="#converter" class="navlink">Converter</a></li>
+              <li><a href="#history"class="navlink">History</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div id="explanation">
+          <h2>Explanation</h2>
+            <p>A Caesar cipher is a simple method of encoding messages. Caesar ciphers 
+                use a substitution method where letters in the alphabet are shifted by some fixed number 
+                of spaces to yield an encoding alphabet. A Caesar cipher with a key of 1 would encode 
+                an A as a B, an M as an N, and a Z as an A, and so on. This webpage can convert your 
+                message using any key (1-25, anything lower or higher is already covered by this range).</p>
+        </div>
+        <div id="converter">
+            <div>
+          <textarea id="inputText" name="input" placeholder="Enter your text here" rows="6"cols="30" style="resize: none;"></textarea>
+        </div>
+        <div>
+          <input type="button" value="Convert"id="convert" onclick="cipher();">
+          <input type="text" id="key-num" placeholder="Key">
+        </div>
+        <div>
+          <textarea id="outputText" placeholder="This is the output" cols="30" rows="6" wrap="on" readonly style="resize: none;"></textarea>
+        </div>
+        </div>
+        <div id="history">
+          <h2>History</h2>
+          <p>The Caesar cipher is named after Julius Caesar, who, according to Suetonius, used it with a shift of three (A becoming D when encrypting,
+             and D becoming A when decrypting) to protect messages of military significance. While Caesar's was the first recorded use of this scheme,
+             other substitution ciphers are known to have been used earlier.<br/>It is unknown how effective the Caesar cipher was at the time; there is no
+             record at that time of any techniques for the solution of simple substitution ciphers. The earliest surviving records date to the 9th-century 
+             works of Al-Kindi in the Arab world with the discovery of frequency analysis.</p>
+             <p>A Caesar cipher with a shift of one is used on the back of the mezuzah to encrypt the names of God. This may be a holdover from an earlier 
+             time when Jewish people were not allowed to have mezuzot. The letters of the cryptogram themselves comprise a religiously significant "divine name" 
+             which Orthodox belief holds keeps the forces of evil in check.</p>
+             <p>In the 19th century, the personal advertisements section in newspapers would sometimes be used to exchange messages encrypted using simple cipher 
+             schemes. Kahn (1967) describes instances of lovers engaging in secret communications enciphered using the Caesar cipher in The Times. Even as late as 1915, 
+             the Caesar cipher was in use: the Russian army employed it as a replacement for more complicated ciphers which had proved to be too difficult for their 
+             troops to master; German and Austrian cryptanalysts had little difficulty in decrypting their messages.</p>
+             <p>A construction of two rotating disks with a Caesar cipher can be used to encrypt or decrypt the code.
+             Caesar ciphers can be found today in children's toys such as secret decoder rings. A Caesar shift of thirteen is also performed in the ROT13 algorithm, 
+             a simple method of obfuscating text widely found on Usenet and used to obscure text (such as joke punchlines and story spoilers), but not seriously used 
+             as a method of encryption.</p>
+             <p>The Vigenère cipher uses a Caesar cipher with a different shift at each position in the text; the value of the shift is defined using a repeating keyword. 
+             If the keyword is as long as the message, is chosen at random, never becomes known to anyone else, and is never reused, this is the one-time pad cipher, 
+             proven unbreakable. The conditions are so difficult they are, in practical effect, never achieved. Keywords shorter than the message (e.g., "Complete Victory" 
+             used by the Confederacy during the American Civil War), introduce a cyclic pattern that might be detected with a statistically advanced version of frequency analysis.<br/>
+             In April 2006, fugitive Mafia boss Bernardo Provenzano was captured in Sicily partly because some of his messages, clumsily written in a variation of the 
+             Caesar cipher, were broken. Provenzano's cipher used numbers, so that "A" would be written as "4", "B" as "5", and so on.</p>
+             <p>In 2011, Rajib Karim was convicted in the United Kingdom of "terrorism offences" after using the Caesar cipher to communicate with Bangladeshi Islamic 
+             activists discussing plots to blow up British Airways planes or disrupt their IT networks. Although the parties had access to far better encryption techniques 
+             (Karim himself used PGP for data storage on computer disks), they chose to use their own scheme (implemented in Microsoft Excel), rejecting a more sophisticated code 
+             program called Mujahedeen Secrets "because 'kaffirs', or non-believers, know about it, so it must be less secure".</p>
+        </div>
+      </div>
+        <script src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+    <footer>
+        <p>Created by Kamil Tolkin</p>
+        <a href="kamiltolkin.github.io" target="_blank">My Portfolio Page</a>
+    </footer>
+</html>

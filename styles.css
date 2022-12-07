@@ -1,0 +1,137 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #EEE;
+  color: #333;
+}
+
+#container-fluid {
+  margin: 0 auto;
+  width: 80%;
+  padding: 1em;
+}
+
+.cypher-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  border-bottom: 1px solid #333;
+}
+
+.cypher-header h1 {
+  margin: 0;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+#navbar-desktop ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#navbar-desktop ul li {
+  margin-left: 1em;
+}
+
+#navbar-desktop ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: color 0.3s;
+}
+
+#navbar-desktop ul li a:hover {
+  color: #555;
+}
+
+#explanation,
+#history {
+  margin-top: 2em;
+}
+
+#explanation h2,
+#history h2 {
+  margin: 0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.2em;
+}
+
+#explanation p,
+#history p {
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+#converter {
+  margin-top: 2em;
+}
+
+#converter div {
+  display: flex;
+  align-items: center;
+}
+
+#converter textarea,
+#converter input {
+  padding: 0.5em;
+  font-size: 0.8em;
+  margin-right: 0.5em;
+  border: 1px solid #333;
+}
+
+
+#convert {
+  background-color: #555;
+  color: #EEE;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: background-color 0.3s;
+}
+
+#convert:hover {
+  background-color: #333;
+}
+#key-num{
+  width: 50px;
+  padding: 10px 0;
+}
+
+input{
+  margin: 10px 0;
+}
+
+
+  footer{
+    background-color: #333;
+    display: block;
+    text-align: center;
+    padding: 2em 0;
+  }
+  
+  footer > p{
+    color: #EEE;
+    padding-bottom: 5px;
+  }
+  
+  footer > a{
+    text-decoration: none!important;
+    color: #EEE !important;
+    padding-top: 5px;
+  }
