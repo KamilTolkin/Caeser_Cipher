@@ -389,3 +389,7 @@ function cipher(str, key) {
 
   document.getElementById("outputText").value = strFin;
 }
+
+function toggleMobileMenu(menu) {
+  menu.classList.toggle('open');
+}

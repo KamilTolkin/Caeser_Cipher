@@ -10,6 +10,8 @@ body {
   margin-left: 5px;
 }
 
+
+
 .cypher-header {
   display: flex;
   justify-content: space-between;
@@ -26,10 +28,10 @@ body {
 }
 
 #navbar-desktop ul {
-  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  list-style: none;
 }
 
 #navbar-desktop ul li {
@@ -38,7 +40,7 @@ body {
 
 #navbar-desktop ul li a {
   text-decoration: none;
-  color: #333;
+  color: #333 !important;
   font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -127,8 +129,69 @@ footer > p {
 }
 
 footer > a {
-  text-decoration: none !important;
-  color: #eee !important;
   display: block;
   margin: 15px 0;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 110px;
+  width: 100%;
+  background-color: #333;
+  color: #eee;
+}
+ul {
+  list-style: none!important;
+}
+
+ a{
+  color: #eee;
+}
+
+@media only screen and (max-width: 600px){
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
 }
